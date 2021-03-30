@@ -1,0 +1,5 @@
+TO DO LIST
+    - import Materialize CSS framework
+    - html skeleton that matches wireframe functionality in proposal (could start with landing page)
+    - utilize Materialize CSS framework when styling page
+    - BONUS add id's to each button and set those button elements equal to javascript variables
