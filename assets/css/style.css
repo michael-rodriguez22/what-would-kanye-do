@@ -6,24 +6,19 @@ body {
     position: sticky;
 }
 
-/* NAV STYLES */
+/* SITE TITLE */
 nav {
     font-family: 'Dancing Script', cursive;
     padding: 0 4em;
 }
 
 nav .brand-logo{
-    font-size: 38px;
+    font-size: 44px;
     margin: 0;
     line-height: unset;
 }
 
-.nav-wrapper li {
-    margin-left: 2em;
-    font-size: 26px;
-}
-
-/* FIND NEW QUOTES STYLES */
+/* FIND NEW QUOTES SECTION */
 .find-new-quotes-section {
     display: flex;
     flex-direction: row;
@@ -42,7 +37,7 @@ nav .brand-logo{
     font-weight: bolder;
 }
 
-.buttons {
+.buttons-wrapper {
     width: 30%;
     text-align: center;
     padding: 2em 0;
@@ -57,7 +52,12 @@ nav .brand-logo{
     padding: 1em;
 }
 
-/* SAVED QUOTE STYLES */
+.divider {
+    width: 80%;
+    margin: 0 auto 2em;
+}
+
+/* SAVED QUOTES SECTION */
 .center {
     margin: 1em auto;
 }

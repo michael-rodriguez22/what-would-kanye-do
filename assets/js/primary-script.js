@@ -1,46 +1,38 @@
-// CREATE ARRAY WHERE SAVED QUOTE OBJECTS WILL BE STORED
-let lsQuoteObjectsArr = new Array();
-
-// create Array kanye gif urls will be stored
-let kanyeGIFURLsArr = new Array();
-// populate that array once on pageload, such that we only need to fetch giphy information once
+// CREATE ARRAY OF ALL KANYE GIFS THAT WILL BE USED
+let kanyeGIFURLs = new Array();
 function giphyFetch() {
     fetch(`https://api.giphy.com/v1/gifs/search?api_key=VSPSbFNr7y8yOtY0EZ6u8TxYLHCJG8RK&q=kanye%20west&limit=100&lang=en`)
         .then(function(giphyRes) {
             giphyRes.json()
                 .then(function(giphyData) {
-                    console.log(giphyData);
                     giphyData.data.forEach(element => {
-                        kanyeGIFURLsArr.push(element.url);
+                        kanyeGIFURLs.push(element.url);
                     });
                 })
         });
 }
 giphyFetch();
 
-// fetch a random kanye quote (response already plain text)
-function fetchQuote() {
+// CREATE ARRAY WHERE SAVED QUOTE OBJECTS WILL BE STORED
+let lsObjectsArr = new Array();
+
+// GENERATE NEW QUOTE OBJECT
+function generateHandler() {
     fetch(`https://api.kanye.rest?`)
         .then(function (quoteRes) {
             quoteRes.json()
                 .then(function(quoteData) {
-                    generatedQuote;
+                    let generatedQuoteObject = new Object();
+                    generatedQuoteObject.url = kanyeGIFURLs[Math.floor(Math.random() * 50)]
+                    generatedQuoteObject.quote = quoteData.quote;
+                    displayQuote(generatedQuoteObject);
+                    lsObjectsArr.push(generatedQuoteObject);
+                    console.log(generatedQuoteObject);
                 })
         })
 }
-// fetchQuote();
-let gifEl = document.createElement("img");
-function generateQuoteHandler() {
-    let generatedQuoteObject = new Object();
-    selectedGIF = kanyeGIFURLsArr[Math.floor(Math.random() * 50)]
-    console.log(selectedGIF);
-    fetchQuote();
-}
 
-
-
-
-
+// DISPLAY QUOTE ON PAGE
 
 // ON PAGE LOAD 
     // if (local storage empty) hide saved quotes section
