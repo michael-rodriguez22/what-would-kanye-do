@@ -23,21 +23,37 @@ nav .brand-logo{
     font-size: 26px;
 }
 
-/* MAIN STYLES */
-.find-new-quote-section {
+/* FIND NEW QUOTES STYLES */
+.find-new-quotes-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quote-object-el {
+    width: 50%;
+}
+
+.card-content p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.buttons {
+    width: 30%;
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 8px;
 }
 
 .user-choice-btn {
-    font-size: 16px;
-}
-
-.quote-object {
-    display: flex;
-}
-
-.quote {
-    font-family: 'Dancing Script', cursive;
     font-size: 20px;
+    margin:2em;
+    border-radius: 8px;
+    border: none;
+    padding: 1em;
 }
+
+/* SAVED QUOTE STYLES */
