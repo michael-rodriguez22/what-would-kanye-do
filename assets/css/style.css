@@ -57,3 +57,13 @@ nav .brand-logo{
 }
 
 /* SAVED QUOTE STYLES */
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em 5%;
+}
+
+.saved-card {
+    width: 20%;
+}

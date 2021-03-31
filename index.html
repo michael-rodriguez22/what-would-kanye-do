@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Would Kanye Do?</title>
-    <link rel="shortcut icon" type="image/jpg" href="https://toppng.com/uploads/preview/kanye-west-head-png-clipart-freeuse-stock-kanye-west-11563263398iveosc5nge.png">
+    <link rel="shortcut icon" type="image/jpg"
+        href="https://toppng.com/uploads/preview/kanye-west-head-png-clipart-freeuse-stock-kanye-west-11563263398iveosc5nge.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -22,34 +24,112 @@
     </nav>
     <main>
         <!-- Generate Quote Section -->
-        <section id="find-new-quotes-section" class="find-new-quotes-section">
-            <div class="card quote-object-el">
+        <section id="find-new-quotes-section" class="find-new-quotes-section hide">
+            <div class="card generated-object-el">
                 <div class="card-image">
                     <img id="giphy-el" src="assets/images/GettyImages-1144224135.jpeg">
-                    <!-- <button id="save-button-el" class="btn-floating halfway-fab waves-effect waves-light purple">
-                        <i class="large material-icons">add</i>
-                    </button> -->
                 </div>
                 <div class="card-content purple accent-1">
                     <p id="quote-el">
-                        I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information. I am convenient
+                        because I require little markup to use effectively.
                     </p>
                 </div>
             </div>
             <div class="buttons red lighten-2">
-                <button id ="generate-button-el" class="user-choice-btn purple lighten-2">Generate New Quote</button>
-                <button id="save-quote-el" class="user-choice-btn purple lighten-2">Save Quote to My Favorites</button>    
+                <button id="generate-button-el" class="user-choice-btn purple lighten-2">Generate New Quote</button>
+                <button id="save-quote-el" class="user-choice-btn purple lighten-2">Save Quote to My Favorites</button>
             </div>
         </section>
         <!-- Saved Quote Section -->
         <section id="my-favorites-section">
-            <div class="row" id="saved-quote-el">
-                <img id="saved-giphy">
-                <p>saved-quote</p>
-                <button id="remove-quote">remove</button>
+            <div class="card-wrapper">
+                <div class="card saved-card">
+                    <div class="card-image">
+                        <img src="assets/images/GettyImages-1144224135.jpeg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light purple">
+                            <i class="material-icons">cancel</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am
+                        convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
             </div>
+            <div class="card-wrapper">
+                <div class="card saved-card">
+                    <div class="card-image">
+                        <img src="assets/images/GettyImages-1144224135.jpeg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light purple">
+                            <i class="material-icons">cancel</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am
+                        convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card saved-card">
+                    <div class="card-image">
+                        <img src="assets/images/GettyImages-1144224135.jpeg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light purple">
+                            <i class="material-icons">cancel</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am
+                        convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card saved-card">
+                    <div class="card-image">
+                        <img src="assets/images/GettyImages-1144224135.jpeg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light purple">
+                            <i class="material-icons">cancel</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am
+                        convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card saved-card">
+                    <div class="card-image">
+                        <img src="assets/images/GettyImages-1144224135.jpeg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light purple">
+                            <i class="material-icons">cancel</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am
+                        convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card saved-card">
+                    <div class="card-image">
+                        <img src="assets/images/GettyImages-1144224135.jpeg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light purple">
+                            <i class="material-icons">cancel</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am
+                        convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>    
         </section>
     </main>
     <script type="text/Javascript" src="assets/js/primary-script.js"></script>
 </body>
+
 </html>
