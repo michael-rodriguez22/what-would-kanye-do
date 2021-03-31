@@ -3,22 +3,26 @@ main {
 }
 
 body {
-    background-color: darkcyan;
+    background-image: url("../images/kanyebackground.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
     font-family: 'Dancing Script', cursive;
+    position: sticky;
 }
 
 h2 {
     text-align: right;
 }
 
-.navbar {
+ .navbar { 
     text-align: center;
     display: block;
     margin: 0 auto;
-    background-color: lavender;
+    background-color: rgba(19, 4, 31, 0.5);
     padding: 5px 0;
-    font-size: 24px !important;
-}
+    font-size: 24px;
+}  
 
 button {
     display: inline-block;
@@ -29,8 +33,6 @@ button {
     opacity: 0.6;
     color: #FFF;
 }
-
-
 
 /* .generate-button {
     text-decoration: none;
