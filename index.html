@@ -8,14 +8,15 @@
     <!-- Need to import Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900')">
 </head>
 
 <body>
     <nav>
-        <h1 class="site-title">What Would Kanye Do?</h1>
+        <h1 class="site-title navbar">What Would Kanye Do?</h1>
         <!-- <p>Inspirational quotes as said by Kanye West</p> -->
-        <h2 id="saved-quotes-nav">Saved Quotes</h2>
-        <h2 id="generate-quotes-nav">Generate Quotes</h2>
+        <h2 id="saved-quotes-nav" class="navbar">Saved Quotes</h2>
+        <h2 id="generate-quotes-nav" class="navbar">Generate Quotes</h2>
     </nav>
     <main>
         <!-- Generate Quote Section -->
@@ -25,7 +26,7 @@
                     <img id="giphy-el">
                 </div>
                 <div class="quote">
-                    <p>Generated Quote</p>
+                    <p id="generated-quote">Generated Quote</p>
                 </div>
             </div>
             <div class="buttons">

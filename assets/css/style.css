@@ -2,11 +2,30 @@ main {
     padding: 20px;
 }
 
-h1 {
+body {
+    background-color: lavender;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar {
     text-align: center;
     display: block;
     margin: 0 auto;
     background-color: lavender;
     padding: 5px 0;
+    font-size: 24px !important;
 }
 
+button {
+    display: inline-block;
+    border: .2em solid;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0.6;
+    color: #FFF;
+}
+
+/* .generate-button {
+    text-decoration: none;
+} */
