@@ -78,10 +78,11 @@ nav .brand-logo{
         width: 110%;
     }
 
-    .user-choice-btn {
+    .buttons-wrapper .user-choice-btn {
         position: relative;
-        font-size: 10px;
+        font-size:unset;
         margin: 0;
+        padding: 1em;
     }
 
     .card-wrapper {
@@ -92,9 +93,14 @@ nav .brand-logo{
     .card .card-content {
         padding: 3px;
         justify-content: center;
-        font-size: 5px;
+        font-size: 12px;
         line-height: 30px;
-        
+    }
+    
+    .card-content p {
+        /* font-size: 18px; */
+        font-size-adjust: inherit;
+        padding: inherit; 
     }
 }
 
