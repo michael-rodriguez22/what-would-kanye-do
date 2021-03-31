@@ -29,9 +29,10 @@ nav .brand-logo{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 1em 0;
 }
 
-.quote-object-el {
+.generated-object-el {
     width: 50%;
 }
 
@@ -57,13 +58,18 @@ nav .brand-logo{
 }
 
 /* SAVED QUOTE STYLES */
+.center {
+    margin: 1em auto;
+}
+
 .card-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 1em 5%;
 }
 
 .saved-card {
     width: 20%;
+    margin: 2%;
 }
