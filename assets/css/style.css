@@ -71,3 +71,38 @@ nav .brand-logo{
     width: 20%;
     margin: 2%;
 }
+
+@media screen and (max-width: 375px) {
+    .brand-logo {
+        justify-content: center;
+        width: 110%;
+    }
+
+    .user-choice-btn {
+        position: relative;
+        aspect-ratio: inherit;
+    }
+}
+
+
+
+/* @media screen and (max-width: 575px) {
+    .brand-logo {
+        padding: 30px 15px;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .brand-logo {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        font-size: 20px;
+        width: 100%;
+    }
+} */
