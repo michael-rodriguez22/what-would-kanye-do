@@ -1,39 +1,43 @@
-main {
-    padding: 20px;
-}
-
 body {
     background-image: url("../images/kanyebackground.jpg");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
-    font-family: 'Dancing Script', cursive;
     position: sticky;
 }
 
-h2 {
-    text-align: right;
+/* NAV STYLES */
+nav {
+    font-family: 'Dancing Script', cursive;
+    padding: 0 4em;
 }
 
- .navbar { 
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    background-color: rgba(19, 4, 31, 0.5);
-    padding: 5px 0;
-    font-size: 24px;
-}  
-
-button {
-    display: inline-block;
-    border: .2em solid;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    opacity: 0.6;
-    color: #FFF;
+nav .brand-logo{
+    font-size: 38px;
+    margin: 0;
+    line-height: unset;
 }
 
-/* .generate-button {
-    text-decoration: none;
-} */
+.nav-wrapper li {
+    margin-left: 2em;
+    font-size: 26px;
+}
+
+/* MAIN STYLES */
+.find-new-quote-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-choice-btn {
+    font-size: 16px;
+}
+
+.quote-object {
+    display: flex;
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}

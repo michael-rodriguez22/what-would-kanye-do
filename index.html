@@ -5,38 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Would Kanye Do?</title>
-    <!-- Need to import Materialize -->
     <link rel="shortcut icon" type="image/jpg" href="https://toppng.com/uploads/preview/kanye-west-head-png-clipart-freeuse-stock-kanye-west-11563263398iveosc5nge.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <h1 class="navbar">What Would Kanye Do?</h1>
-        <!-- <p>Inspirational quotes as said by Kanye West</p> -->
-        <h2 id="saved-quotes-nav" class="navbar">Saved Quotes</h2>
-        <h2 id="generate-quotes-nav" class="navbar">Generate Quotes</h2>
+    <nav class="nav-wrapper purple lighten-1">
+        <h1 class="brand-logo">What Would Kanye Do?</h1>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>Find New Quotes</li>
+            <li>My Favorites</li>
+        </ul>
     </nav>
     <main>
         <!-- Generate Quote Section -->
-        <section id="quote-generator">
-            <div class="row">
-                <div class="picure">
-                    <img id="giphy-el">
+        <section id="find-new-quotes-section" class="find-new-quotes-section">
+            <button id ="generate-button-el" class="user-choice-btn">Generate New Quote</button>
+            <div class="card quote-object-el">
+                <div class="card-image">
+                    <img id="giphy-el" src="assets/images/GettyImages-1144224135.jpeg">
+                    <!-- <button id="save-button-el" class="btn-floating halfway-fab waves-effect waves-light purple">
+                        <i class="large material-icons">add</i>
+                    </button> -->
                 </div>
-                <div class="quote">
-                    <p id="generated-quote">Generated Quote</p>
+                <div class="card-content purple accent-1">
+                    <p id="quote-el">
+                        I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                    </p>
                 </div>
             </div>
-            <div class="buttons">
-                <button id="generate-button-el" class="waves-effect waves-light btn dark grey"><i class="material-icons left">Generate New Quote</button></i>
-                <button id="save-button-el" class="waves-effect waves-light btn dark grey"><i class="material-icons left">Save Quote & Picture</button></i>
-            </div>
+            <button id="save-quote-el" class="user-choice-btn">Save Quote to My Favorites</button>
         </section>
-        <!-- Saved Quotes Section -->
-        <section id="saved-quotes" class="hide">
+        <!-- Saved Quote Section -->
+        <section id="my-favorites-section">
             <div class="row" id="saved-quote-el">
                 <img id="saved-giphy">
                 <p>saved-quote</p>
