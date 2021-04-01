@@ -99,6 +99,9 @@ nav .brand-logo{
 }
 
 @media screen and (max-width: 660px) {
+    nav .brand-logo {
+        font-size: 32px;
+    }
     .find-new-quotes-section {
         flex-direction: column;
     }
