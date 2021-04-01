@@ -59,8 +59,8 @@ function generateHandler() {
         .then(function (quoteRes) {
             quoteRes.json()
                 .then(function (quoteData) {
-                    let selectedGif = kanyeGifsArr[Math.floor(Math.random() * 50 )];
-                    let QO = new QuoteObject(selectedGif.url, quoteData.quote);
+                    let selectedGif = kanyeGifsArr[Math.floor(Math.random() * 50 )].url;
+                    let QO = new QuoteObject(selectedGif, quoteData.quote);
                     displayQuote(QO);
                     currentQO = QO;
                 });
@@ -113,7 +113,6 @@ function displayFavorites() {
             newCard.appendChild(newCardContent);
             cardWrapperEl.appendChild(newCard);
         }
-
     }
 }
 
