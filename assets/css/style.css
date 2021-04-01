@@ -13,6 +13,7 @@ nav {
 }
 
 nav .brand-logo{
+    width: 100%;
     font-size: 44px;
     margin: 0;
     line-height: unset;
@@ -38,16 +39,17 @@ nav .brand-logo{
 .buttons-wrapper {
     width: 30%;
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 0;
     border-radius: 8px;
 }
 
 .user-choice-btn {
     font-size: 20px;
-    margin:2em;
+    margin: 1em 0;
     border-radius: 8px;
     border: none;
     padding: 1em;
+    width: 80%;
 }
 
 .divider {
@@ -56,15 +58,17 @@ nav .brand-logo{
 }
 
 /* SAVED QUOTES SECTION */
-.center {
-    margin: 1em auto;
+.section-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .section-title {
     font-family: 'Dancing Script', 'cursive';
-    font-size: 32px;
     margin-bottom: 1em;
-    text-align: center;
+    border-bottom: solid white 1px;
+    /* font-size: 52px; */
 }
 
 .card-wrapper {
@@ -79,57 +83,45 @@ nav .brand-logo{
     margin: 2%;
 }
 
-@media screen and (min-width: 350px) {
-    .brand-logo {
-        justify-content: center;
-        width: 100%;
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .section-title {
+        font-size: 32px;
     }
 
-    .buttons-wrapper .user-choice-btn {
-        position: relative;
-        font-size:unset;
-        margin: 0;
-        padding: 1em;
+    .user-choice-btn {
+        font-size: 14px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .find-new-quotes-section {
+        flex-direction: column;
+    }
+
+    .generated-object-el {
+        width: 80%;
+    }
+
+    .buttons-wrapper {
+        width: 80%;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: center;
     }
 
     .card-wrapper {
-        padding: 10px;
-        flex: 1 100%; 
+        flex-direction: column;
     }
 
-    .card .card-content {
-        padding: 3px;
-        justify-content: center;
-        font-size: 12px;
-        line-height: 30px;
-    }
-    
-    .card-content p {
-        /* font-size: 18px; */
-        font-size-adjust: inherit;
-        padding: inherit; 
+    .saved-card {
+        width: 80%;
+        margin: 2% auto;
     }
 }
-
-
-
-/* @media screen and (max-width: 575px) {
-    .brand-logo {
-        padding: 30px 15px;
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-        font-size: 20px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    .brand-logo {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-        font-size: 20px;
-        width: 100%;
-    }
-} */
