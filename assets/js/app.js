@@ -23,8 +23,7 @@ if (localStorage.getItem("lsArr")) {
 
 // QUOTE OBJECT CLASS
 class QuoteObject {
-    constructor(id, url, quote) {
-        this.id = id;
+    constructor(url, quote) {
         this.gif = url;
         this.quote = quote;
     }
@@ -43,8 +42,7 @@ function giphyFetch() {
                 .then(function(giphyData) {
                     giphyData.data.forEach(element => {
                         kanyeGifsArr.push({
-                            url: element.images.fixed_height.url,
-                            id: element.id
+                            url: element.images.fixed_height.url
                         });
                     });
                 })
@@ -62,7 +60,7 @@ function generateHandler() {
             quoteRes.json()
                 .then(function (quoteData) {
                     let selectedGif = kanyeGifsArr[Math.floor(Math.random() * 50 )];
-                    let QO = new QuoteObject(selectedGif.id, selectedGif.url, quoteData.quote);
+                    let QO = new QuoteObject(selectedGif.url, quoteData.quote);
                     displayQuote(QO);
                     currentQO = QO;
                 });
