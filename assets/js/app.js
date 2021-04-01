@@ -1,6 +1,6 @@
 // ON PAGE LOAD
 let generatedCardEl = document.getElementById("generated-object-el");
-let saveButtonEl = document.getElementById("save-quote-el");
+let saveButtonEl = document.getElementById("save-button-el");
 let myFavoritesEl = document.getElementById("my-favorites-section");
 
 function hide(element) {
@@ -10,6 +10,7 @@ function hide(element) {
 function pageLoadHide() {
     hide(generatedCardEl);
     hide (saveButtonEl); 
+    hide(myFavoritesEl);
 }
 
 pageLoadHide();
@@ -78,11 +79,53 @@ function displayQuote(object) {
     saveButtonEl.style.display = "unset";
 }
 
+
 // SAVE HANDLER 
 function saveHandler() {
     if (lsArr[lsArr.length - 1] !== JSON.stringify(currentQO)) {
         currentQO.saveQuote();
+        displayFavorites();
     }
 }
 
 saveButtonEl.addEventListener("click", saveHandler)
+
+// MY FAVORITE SECTION
+let cardWrapperEl = document.querySelector(".card-wrapper");
+function clearFavorites() {
+    while (cardWrapperEl.firstChild) {
+        cardWrapperEl.removeChild(cardWrapperEl.firstChild);
+    }
+}
+
+function displayFavorites() {
+    if (localStorage.getItem("lsArr")) {
+        myFavoritesEl.style.display = "unset";
+        clearFavorites();
+        for (let i = lsArr.length; i > 0; i--){
+            let newCard = document.createElement("div");
+            newCard.className = "card saved-card purple accent-1";
+            let newImgDiv = document.createElement("div");
+            newImgDiv.className = "card-image"
+            newImgDiv.innerHTML = `<img src="${JSON.parse(lsArr[i - 1]).gif}">`
+            newCard.appendChild(newImgDiv);
+            let newCardContent = document.createElement("div");
+            newCardContent.className = "card-content";
+            newCardContent.innerHTML = `<p>${JSON.parse(lsArr[i - 1]).quote}</p>`;
+            newCard.appendChild(newCardContent);
+            cardWrapperEl.appendChild(newCard);
+        }
+
+    }
+}
+
+displayFavorites();
+
+function clearHandler() {
+    localStorage.removeItem("lsArr");
+    lsArr = []
+    clearFavorites();
+    hide(myFavoritesEl);
+}
+
+document.getElementById("clear-button-el").addEventListener("click", clearHandler);

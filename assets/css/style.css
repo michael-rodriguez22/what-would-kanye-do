@@ -60,6 +60,13 @@ nav .brand-logo{
     margin: 1em auto;
 }
 
+.section-title {
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 32px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
 .card-wrapper {
     display: flex;
     flex-direction: row;
