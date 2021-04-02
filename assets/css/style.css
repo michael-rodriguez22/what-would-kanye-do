@@ -1,0 +1,130 @@
+body {
+    background-image: url("../images/kanyebackground.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    position: sticky;
+}
+
+/* SITE TITLE */
+nav {
+    font-family: 'Dancing Script', cursive;
+    padding: 0 4em;
+}
+
+nav .brand-logo{
+    width: 100%;
+    font-size: 44px;
+    margin: 0;
+    line-height: unset;
+}
+
+/* FIND NEW QUOTES SECTION */
+.find-new-quotes-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.generated-object-el {
+    width: 50%;
+}
+
+.card-content p {
+    font-size: 20px;
+}
+
+.buttons-wrapper {
+    width: 30%;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 8px;
+}
+
+.user-choice-btn {
+    font-size: 20px;
+    margin: 1em 0;
+    border-radius: 8px;
+    border: none;
+    padding: 1em;
+    width: 80%;
+}
+
+.divider {
+    width: 80%;
+    margin: 0 auto 2em;
+}
+
+/* SAVED QUOTES SECTION */
+.section-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-title {
+    font-family: 'Dancing Script', 'cursive';
+    margin-bottom: 1em;
+    border-bottom: solid white 1px;
+    /* font-size: 52px; */
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.saved-card {
+    width: 20%;
+    margin: 2%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .section-title {
+        font-size: 32px;
+    }
+
+    .user-choice-btn {
+        font-size: 14px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    nav .brand-logo {
+        font-size: 32px;
+    }
+    .find-new-quotes-section {
+        flex-direction: column;
+    }
+
+    .generated-object-el {
+        width: 80%;
+    }
+
+    .buttons-wrapper {
+        width: 80%;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .saved-card {
+        width: 80%;
+        margin: 2% auto;
+    }
+}
